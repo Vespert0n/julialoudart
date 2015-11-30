@@ -2,26 +2,26 @@
     'use strict';
 
     angular
-    .module('jlart.splash')
-    .directive('splashLanding', splashLanding);
+    .module('jlart.homeMain')
+    .directive('homeMain', homeMain);
 
-    splashLanding.$inject = [];
+    homeMainLanding.$inject = [];
 
-    function splashLanding() {
+    function homeMain() {
         var directive = {
             bindToController: true,
-            controller: SplashController,
+            controller: HomeMainController,
             controllerAs: 'vm',
             replace: true,
             restrict: 'E',
             scope: {}, 
-            templateUrl: 'app/splash.html' 
+            templateUrl: 'app/homeMain.html' 
         };
 
         return directive;
     }
 
-    function SplashController() {
+    function HomeMainController() {
     
     }
 })();
