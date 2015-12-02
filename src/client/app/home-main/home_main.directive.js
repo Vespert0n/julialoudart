@@ -5,7 +5,7 @@
     .module('jlart.homeMain')
     .directive('homeMain', homeMain);
 
-    homeMainLanding.$inject = [];
+    homeMain.$inject = [];
 
     function homeMain() {
         var directive = {
@@ -15,13 +15,13 @@
             replace: true,
             restrict: 'E',
             scope: {}, 
-            templateUrl: 'app/homeMain.html' 
+            templateUrl: 'app/home_main.html' 
         };
 
         return directive;
     }
 
     function HomeMainController() {
-    
+        var vm = this;
     }
 })();
