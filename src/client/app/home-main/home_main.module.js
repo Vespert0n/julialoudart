@@ -1,5 +1,5 @@
 (function() {
     'use strict';
 
-    angular.module('jlart.home_main', []);
+    angular.module('jlart.homeMain', []);
 })();

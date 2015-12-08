@@ -2,18 +2,20 @@
     'use strict';
 
     angular
-    .module('jlart.home_main')
+    .module('jlart.homeMain')
     .config(configure);
 
     configure.$inject = ['$stateProvider', '$urlRouterProvider'];
 
     function configure($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.when('/', '/home');
+
         $stateProvider
-            .state('home_main', {
+            .state('home', {
                 controller: 'HomeMainController',
                 controllerAs: 'vm',
-                templateUrl: 'app/home_main/home_main.html',
-                url: '/'
+                templateUrl: 'app/home_main/home_wrapper.html',
+                url: '/home'
             });
     }
 })();
