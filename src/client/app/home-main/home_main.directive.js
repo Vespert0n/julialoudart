@@ -5,8 +5,6 @@
     .module('jlart.homeMain')
     .directive('homeMain', homeMain);
 
-    homeMain.$inject = [];
-
     function homeMain() {
         var directive = {
             bindToController: true,
