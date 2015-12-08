@@ -2,8 +2,8 @@
     'use strict';
 
     angular.module('jlart', [
-        'ui-router',
-        'jlart.home_main',
+        'ui.router',
+        'jlart.homeMain',
     ]);
 
 })();
