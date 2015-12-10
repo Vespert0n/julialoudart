@@ -3,7 +3,8 @@
 
     angular
     .module('jlart.homeMain')
-    .directive('homeMain', homeMain);
+    .directive('homeMain', homeMain)
+    .controller('HomeMainController', HomeMainController);
 
     function homeMain() {
         var directive = {
@@ -13,7 +14,7 @@
             replace: true,
             restrict: 'E',
             scope: {}, 
-            templateUrl: 'app/home_main.html' 
+            templateUrl: 'app/home-main/home_main.html' 
         };
 
         return directive;
