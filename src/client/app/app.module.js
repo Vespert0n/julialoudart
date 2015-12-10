@@ -3,7 +3,8 @@
 
     angular.module('jlart', [
         'ui.router',
-        'jlart.homeMain',
+        'jlart.core',
+        'jlart.homeMain'
     ]);
 
 })();
